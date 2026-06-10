@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a221c530461b78e41b192d90f10a0617, type: 3}
+  m_Name: AStarGridDatabase
+  m_EditorClassIdentifier: 
+  columns: 5
+  rows: 8
+  blockedCount: 10
+  randomizeEveryPlay: 1
+  maxGenerationAttempts: 50
+  sourceColumn: 0
+  targetColumn: 0
+  randomizeSourceColumn: 0
+  randomizeTargetColumn: 0
+  allowDiagonalMovement: 1
+  preventCornerCutting: 1
+  straightMoveCost: 10
+  diagonalMoveCost: 14
+  unblockedMaterial: {fileID: 2100000, guid: 549dc0e4ff0b83e4cbeb82141fc7b6b6, type: 2}
+  blockedMaterial: {fileID: 2100000, guid: b196f2418d337f3499c537516c0e5354, type: 2}
+  sourceMaterial: {fileID: 2100000, guid: 40e892cc8def9b14cae8c354e628ef93, type: 2}
+  targetMaterial: {fileID: 2100000, guid: 0f0bd2dc01772214f8f2d4621c57d416, type: 2}
+  pathMaterial: {fileID: 2100000, guid: f8bbcb5a535c37c40bb517950dc5fff8, type: 2}
+  visitedMaterial: {fileID: 0}
+  gridLineMaterial: {fileID: 2100000, guid: 70570800f2a4cca42a6049f6e159de9d, type: 2}
+  textMaterial: {fileID: 0}
+  cellSize: 1
+  cellGap: 0.04
+  cellHeight: 0.05
+  pathLineWidth: 0.1
+  showAxisLabels: 1
+  showCoordinateLabels: 0
+  showPathCoordinateLabels: 0
+  labelSize: 0.068
+  labelHeightOffset: 0.12
+  axisLabelColor: {r: 1, g: 1, b: 1, a: 1}
+  cellLabelColor: {r: 0, g: 0, b: 0, a: 1}
+  pathLabelColor: {r: 0, g: 0, b: 0, a: 1}
+  showVisitedCells: 0

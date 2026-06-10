@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bdb2be1b6fee4740bdc0f9c92233a2d, type: 3}
+  m_Name: DijkstraGraphDatabase
+  m_EditorClassIdentifier: 
+  sampleIndex: 2
+  useAutoLayout: 0
+  autoLayoutRadius: 4
+  samples:
+  - sampleName: 0
+    startNodeId: 0
+    targetNodeId: 4
+    nodes:
+    - id: 0
+      position: {x: 0, y: 0, z: 0}
+    - id: 1
+      position: {x: 1, y: 1, z: 0}
+    - id: 2
+      position: {x: 1, y: -1, z: 0}
+    - id: 3
+      position: {x: 2, y: -1, z: 0}
+    - id: 4
+      position: {x: 2, y: 1, z: 0}
+    edges:
+    - from: 0
+      to: 1
+      weight: 4
+    - from: 0
+      to: 2
+      weight: 8
+    - from: 1
+      to: 2
+      weight: 3
+    - from: 1
+      to: 4
+      weight: 6
+    - from: 2
+      to: 3
+      weight: 2
+    - from: 3
+      to: 4
+      weight: 10
+  - sampleName: 1
+    startNodeId: v1
+    targetNodeId: v6
+    nodes:
+    - id: v1
+      position: {x: 0, y: 0, z: 0}
+    - id: v2
+      position: {x: 1, y: 1, z: 0}
+    - id: v3
+      position: {x: 1, y: -1, z: 0}
+    - id: v4
+      position: {x: 2, y: 1, z: 0}
+    - id: v5
+      position: {x: 2, y: -1, z: 0}
+    - id: v6
+      position: {x: 3, y: 0, z: 0}
+    edges:
+    - from: v1
+      to: v2
+      weight: 9
+    - from: v1
+      to: v3
+      weight: 4
+    - from: v2
+      to: v3
+      weight: 2
+    - from: v2
+      to: v4
+      weight: 7
+    - from: v2
+      to: v5
+      weight: 3
+    - from: v3
+      to: v5
+      weight: 6
+    - from: v3
+      to: v4
+      weight: 1
+    - from: v4
+      to: v5
+      weight: 4
+    - from: v4
+      to: v6
+      weight: 8
+    - from: v5
+      to: v6
+      weight: 2
+  - sampleName: 2
+    startNodeId: A
+    targetNodeId: F
+    nodes:
+    - id: A
+      position: {x: 0, y: 0, z: 0}
+    - id: B
+      position: {x: 1, y: 1, z: 0}
+    - id: C
+      position: {x: 1, y: -1, z: 0}
+    - id: D
+      position: {x: 2, y: 0, z: 0}
+    - id: E
+      position: {x: 3, y: 0, z: 0}
+    - id: F
+      position: {x: 4, y: 0, z: 0}
+    edges:
+    - from: A
+      to: B
+      weight: 4
+    - from: A
+      to: C
+      weight: 2
+    - from: B
+      to: C
+      weight: 1
+    - from: B
+      to: D
+      weight: 5
+    - from: C
+      to: D
+      weight: 8
+    - from: D
+      to: E
+      weight: 2
+    - from: E
+      to: F
+      weight: 1
